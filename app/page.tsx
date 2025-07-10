@@ -22,6 +22,7 @@ import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { HiOutlineUsers } from "react-icons/hi2";
 import { CiLocationOn } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Home() {
   const words = ["Frontend Developer"];
@@ -34,6 +35,7 @@ export default function Home() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   let target = 252; // Target number for the counter
   let duration = 2000; // Duration in milliseconds for the counter to reach the target
@@ -89,6 +91,12 @@ export default function Home() {
     setEmail("");
     setSubject("");
     setMessage("");
+  };
+
+  const handleMenuToggle = () => {
+    console.log("Menu toggled");
+    setIsMenuOpen(!isMenuOpen);
+
   };
 
   return (
@@ -185,6 +193,14 @@ export default function Home() {
       {/* Main Content */}
       <div className="flex-1 overflow-y-auto scroll-smooth snap-y snap-mandatory">
         {/* Home Section */}
+        <div>
+          <button
+            className="block lg:hidden fixed top-4 left-4 z-50 p-2 bg-gray-600 rounded-sm text-white"
+            onClick={() => handleMenuToggle()}
+          >
+            <GiHamburgerMenu size={24} />
+          </button>
+        </div>
         <section
           id="home"
           className="w-full h-screen bg-[url('../assets/image02.jpg')] bg-contain bg-no-repeat bg-center flex flex-col items-start justify-center snap-start"
@@ -518,7 +534,7 @@ export default function Home() {
                         Address
                       </span>
                       <p className="text-gray-600 text-sm">
-                        1234 Street Name, City, State, 12345
+                        239 North Clark Street, Chicago, IL 60610
                       </p>
                     </div>
                   </div>
@@ -530,7 +546,7 @@ export default function Home() {
                       <span className="text-lg font-semibold text-gray-800">
                         Call Us
                       </span>
-                      <p className="text-gray-600 text-sm">+1 5589 55488 55</p>
+                      <p className="text-gray-600 text-sm">+91 9720227209</p>
                     </div>
                   </div>
                   <div className="py-4 flex">
@@ -541,7 +557,7 @@ export default function Home() {
                       <span className="text-lg font-semibold text-gray-800">
                         Email Us
                       </span>
-                      <p className="text-gray-600 text-sm">info@example.com</p>
+                      <p className="text-gray-600 text-sm">ravendrakumar0102@gmail.com</p>
                     </div>
                   </div>
                   <div>
