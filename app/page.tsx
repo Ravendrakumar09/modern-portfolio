@@ -23,6 +23,7 @@ import { HiOutlineUsers } from "react-icons/hi2";
 import { CiLocationOn } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { LuDot } from "react-icons/lu";
 
 export default function Home() {
   const words = ["Frontend Developer"];
@@ -96,7 +97,6 @@ export default function Home() {
   const handleMenuToggle = () => {
     console.log("Menu toggled");
     setIsMenuOpen(!isMenuOpen);
-
   };
 
   return (
@@ -468,32 +468,178 @@ export default function Home() {
         {/* Resume Section */}
         <section
           id="resume"
-          className="w-full h-screen bg-blue-700 flex flex-col items-center justify-center snap-start"
+          className="flex flex-col w-full min-h-screen bg-white snap-start px-4 py-8"
         >
-          <h2 className="text-2xl font-bold text-white mb-4">Resume</h2>
-          <p className="text-white">
-            You can view my resume{" "}
-            <a
-              href="/path/to/resume.pdf"
-              className="text-blue-200 underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              here
-            </a>
-            .
+          <h2 className="text-3xl font-bold text-black underline mb-6">
+            Resume
+          </h2>
+          <p className="text-black mb-8">
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
           </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 sm:gap-8 justify-between">
+            {/* EDUCATION */}
+            <div className="border-dotted border-2 border-gray-300 rounded-lg p-4 shadow-md">
+              <h1 className="font-semibold text-2xl mb-4">Education</h1>
+              <div className="m-2 relative pl-6">
+                {/* vertical line (length stops after last item) */}
+                <div className="absolute top-6 left-3 h-[calc(100%-3rem)] border-l-2 border-blue-500"></div>
+
+                {/* first item */}
+                <div className="flex flex-col p-4 relative">
+                  {/* dot */}
+                  <div className="absolute -left-4.5 top-6 w-4 h-4 bg-white border-2 border-blue-500 rounded-full"></div>
+                  <h2 className="text-lg font-semibold">
+                    Bachelor of Science in Computer Science
+                  </h2>
+                  <p className="text-gray-600">
+                    Dr. A.P.J. Abdul Kalam Technical University Lucknow Uttar
+                    Pradesh
+                  </p>
+                  <p>2021 - 2024</p>
+                </div>
+
+                {/* second item */}
+                <div className="flex flex-col p-4 relative">
+                  {/* dot */}
+                  <div className="absolute -left-4.5 top-6 w-4 h-4 bg-white border-2 border-blue-500 rounded-full"></div>
+                  <h2 className="text-lg font-semibold">
+                    Diploma in Engineering
+                  </h2>
+                  <p className="text-gray-600">
+                    Board of Technical Education Lucknow Uttar Pradesh
+                  </p>
+                  <p>2018 - 2021</p>
+                </div>
+              </div>
+            </div>
+            {/* PROFESSIONAL EXPERIENCE */}
+            <div className="border-dotted border-2 border-gray-300 rounded-lg p-4 shadow-md">
+              <h1 className="font-semibold text-2xl mb-4">
+                Professional Experience
+              </h1>
+              <div className="m-2 relative pl-6">
+                {/* vertical line */}
+                <div className="absolute top-6 left-3 h-[calc(100%-3rem)] border-l-2 border-blue-500"></div>
+
+                {/* first job */}
+                <div className="flex flex-col p-4 relative">
+                  <div className="absolute -left-4.5 top-6 w-4 h-4 bg-white border-2 border-blue-500 rounded-full"></div>
+                  <h2 className="text-lg font-semibold">
+                    Frontend Developer (Full-Time)
+                  </h2>
+                  <p className="text-gray-600">SHWET KAPILA PRIVATE LIMITED</p>
+                  <p>Jan 2024 - Jun 2025</p>
+                </div>
+
+                {/* second job */}
+                <div className="flex flex-col p-4 relative">
+                  <div className="absolute -left-4.5 top-6 w-4 h-4 bg-white border-2 border-blue-500 rounded-full"></div>
+                  <h2 className="text-lg font-semibold">
+                    Frontend Developer Intern
+                  </h2>
+                  <p className="text-gray-600">SHWET KAPILA PRIVATE LIMITED</p>
+                  <p>Jul 2024 - Dec 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Portfolio Section */}
         <section
           id="portfolio"
-          className="w-full h-screen bg-blue-800 flex flex-col items-center justify-center snap-start"
+          className="flex flex-col w-full min-h-screen bg-white snap-start px-4 py-8"
         >
-          <h2 className="text-2xl font-bold text-white mb-4">Portfolio</h2>
-          <p className="text-white">
-            Check out my portfolio to see some of the projects I have worked on.
+          <h2 className="text-3xl font-bold text-black underline mb-6">
+            Portfolio
+          </h2>
+          <p className="text-black mb-8">
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
           </p>
+          <div>
+            <div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                {/* Portfolio Item 1 */}
+                <div className="bg-gray-100 p-4 rounded-lg shadow-md">
+                  <Image
+                    src={profile}
+                    alt="Portfolio Item"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <h3 className="text-lg font-semibold mb-2">Project Title</h3>
+                  <p className="text-gray-600 mb-4">
+                    Brief description of the project.
+                  </p>
+                  <a
+                    href="#"
+                    className="text-blue-500 hover:underline flex items-center"
+                  >
+                    View Project <LuDot className="ml-1" />
+                  </a>
+                </div>
+                {/* Portfolio Item 2 */}
+                <div className="bg-gray-100 p-4 rounded-lg shadow-md">
+                  <Image
+                    src={profile}
+                    alt="Portfolio Item"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <h3 className="text-lg font-semibold mb-2">Project Title</h3>
+                  <p className="text-gray-600 mb-4">
+                    Brief description of the project.
+                  </p>
+                  <a
+                    href="#"
+                    className="text-blue-500 hover:underline flex items-center"
+                  >
+                    View Project <LuDot className="ml-1" />
+                  </a>
+                </div>
+                {/* Portfolio Item 3 */}
+                <div className="bg-gray-100 p-4 rounded-lg shadow-md">
+                  <Image
+                    src={profile}
+                    alt="Portfolio Item"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <h3 className="text-lg font-semibold mb-2">Project Title</h3>
+                  <p className="text-gray-600 mb-4">
+                    Brief description of the project.
+                  </p>
+                  <a
+                    href="#"
+                    className="text-blue-500 hover:underline flex items-center"
+                  >
+                    View Project <LuDot className="ml-1" />
+                  </a>
+                </div>
+                {/* Portfolio Item 4 */}
+                <div className="bg-gray-100 p-4 rounded-lg shadow-md">
+                  <Image
+                    src={profile}
+                    alt="Portfolio Item"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <h3 className="text-lg font-semibold mb-2">Project Title</h3>
+                  <p className="text-gray-600 mb-4">
+                    Brief description of the project.
+                  </p>
+                  <a
+                    href="#"
+                    className="text-blue-500 hover:underline flex items-center"
+                  >
+                    View Project <LuDot className="ml-1" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Services Section */}
@@ -557,7 +703,9 @@ export default function Home() {
                       <span className="text-lg font-semibold text-gray-800">
                         Email Us
                       </span>
-                      <p className="text-gray-600 text-sm">ravendrakumar0102@gmail.com</p>
+                      <p className="text-gray-600 text-sm">
+                        ravendrakumar0102@gmail.com
+                      </p>
                     </div>
                   </div>
                   <div>
