@@ -11,9 +11,11 @@ import {
 import { MdFacebook } from "react-icons/md";
 import { IoHomeOutline, IoDocumentTextOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
-import { AiOutlineCustomerService } from "react-icons/ai";
 import Image from "next/image";
 import profile from "../assets/ravi-image.jpeg";
+import projectImage1 from "../assets/project-image1.png";
+import movieposter from "../assets/movie-poster.png";
+import todoposter from "../assets/todo-poster.png";
 import { useEffect, useState } from "react";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { BsEmojiSmile } from "react-icons/bs";
@@ -172,9 +174,6 @@ export default function Home() {
           </a>
           <a href="#portfolio" className="flex items-center hover:text-white">
             <FaRegEnvelope className="mr-2" /> Portfolio
-          </a>
-          <a href="#services" className="flex items-center hover:text-white">
-            <AiOutlineCustomerService className="mr-2" /> Services
           </a>
           <div className="flex items-center">
             <FaRegFile className="mr-2" />
@@ -380,7 +379,7 @@ export default function Home() {
               <div>
                 <div className="flex justify-between items-center px-1">
                   <p>HTML</p>
-                  <p>100%</p>
+                  <p>99%</p>
                 </div>
                 <div>
                   <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-[#dfe5e8]">
@@ -564,15 +563,15 @@ export default function Home() {
           </p>
           <div>
             <div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6">
                 {/* Portfolio Item 1 */}
                 <div className="bg-gray-100 p-4 rounded-lg shadow-md">
                   <Image
-                    src={profile}
-                    alt="Portfolio Item"
-                    className="w-full h-48 object-cover rounded-lg mb-4"
+                    src={todoposter}
+                    alt="todo poster"
+                    className="w-full h-56  object-fill rounded-lg mb-4 "
                   />
-                  <h3 className="text-lg font-semibold mb-2">Project Title</h3>
+                  <h3 className="text-lg font-semibold mb-2">Todo Application</h3>
                   <p className="text-gray-600 mb-4">
                     Brief description of the project.
                   </p>
@@ -586,11 +585,11 @@ export default function Home() {
                 {/* Portfolio Item 2 */}
                 <div className="bg-gray-100 p-4 rounded-lg shadow-md">
                   <Image
-                    src={profile}
-                    alt="Portfolio Item"
-                    className="w-full h-48 object-cover rounded-lg mb-4"
+                    src={projectImage1}
+                    alt="movie poster"
+                    className="w-full h-56 object-fill rounded-lg mb-4"
                   />
-                  <h3 className="text-lg font-semibold mb-2">Project Title</h3>
+                  <h3 className="text-lg font-semibold mb-2">Weather Website</h3>
                   <p className="text-gray-600 mb-4">
                     Brief description of the project.
                   </p>
@@ -604,11 +603,11 @@ export default function Home() {
                 {/* Portfolio Item 3 */}
                 <div className="bg-gray-100 p-4 rounded-lg shadow-md">
                   <Image
-                    src={profile}
+                    src={movieposter}
                     alt="Portfolio Item"
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
-                  <h3 className="text-lg font-semibold mb-2">Project Title</h3>
+                  <h3 className="text-lg font-semibold mb-2">Movie Website</h3>
                   <p className="text-gray-600 mb-4">
                     Brief description of the project.
                   </p>
@@ -626,7 +625,7 @@ export default function Home() {
                     alt="Portfolio Item"
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
-                  <h3 className="text-lg font-semibold mb-2">Project Title</h3>
+                  <h3 className="text-lg font-semibold mb-2">Chat App</h3>
                   <p className="text-gray-600 mb-4">
                     Brief description of the project.
                   </p>
@@ -640,22 +639,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
-
-        {/* Services Section */}
-        <section
-          id="services"
-          className="w-full h-screen bg-blue-900 flex flex-col items-center justify-center snap-start"
-        >
-          <h2 className="text-2xl font-bold text-white mb-4">Services</h2>
-          <p className="text-white">
-            I offer a range of web development services. If you're interested in
-            working with me, feel free to{" "}
-            <a href="#contact" className="text-blue-200 underline">
-              contact me
-            </a>
-            .
-          </p>
         </section>
 
         {/* Contact Section */}
