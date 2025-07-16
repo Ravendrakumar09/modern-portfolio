@@ -605,7 +605,7 @@ export default function Home() {
                   <Image
                     src={movieposter}
                     alt="Portfolio Item"
-                    className="w-full h-48 object-cover rounded-lg mb-4"
+                    className="w-full h-48 object-fill rounded-lg mb-4"
                   />
                   <h3 className="text-lg font-semibold mb-2">Movie Website</h3>
                   <p className="text-gray-600 mb-4">
