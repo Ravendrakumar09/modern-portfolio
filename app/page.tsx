@@ -225,12 +225,8 @@ export default function Home() {
           </h2>
 
           <p className="text-black mb-8">
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
+            I am a passionate Frontend Developer specializing in building modern, responsive, and user-friendly web applications. With experience in React, Next.js, and Angular, I enjoy turning complex problems into elegant designs and seamless experiences.
           </p>
-
           {/* Content Row */}
           <div className="flex flex-col md:flex-row w-full md:gap-8 ">
             {/* Image */}
@@ -248,14 +244,12 @@ export default function Home() {
                 UI/UX Designer & Frontend Developer
               </h1>
 
-              <p className="text-gray-700 font-light mb-4">
-                Magnam dolores commodi suscipit. Necessitatibus eius quidem
-                consequatur ex aliquid fuga eum quidem. Sit sint consectetur
-                velit. Quisquam.
+              <p className="text-gray-700 font-light mb-2">
+                I love exploring new technologies and continuously improving my skills. My goal is to create intuitive and engaging digital solutions that help users and businesses succeed. I’m always ready to learn, collaborate, and take on new challenges.
               </p>
 
               {/* Grid Info Section */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-12 mb-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-12 mb-4 mt-4">
                 <div className="flex items-center gap-2">
                   <MdOutlineArrowRight size={20} />
                   <span className="font-semibold">Birthday:</span>
@@ -274,7 +268,7 @@ export default function Home() {
                 <div className="flex items-center gap-2">
                   <MdOutlineArrowRight size={20} />
                   <span className="font-semibold">Degree:</span>
-                  <span className="ml-1">Bachelor's</span>
+                  <span className="ml-1">Bachelor of Technology</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MdOutlineArrowRight size={20} />
@@ -289,7 +283,7 @@ export default function Home() {
                 <div className="flex items-center gap-2">
                   <MdOutlineArrowRight size={20} />
                   <span className="font-semibold">City:</span>
-                  <span className="ml-1">Chicago</span>
+                  <span className="ml-1">Dharmpur (Dibai)</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MdOutlineArrowRight size={20} />
@@ -297,14 +291,6 @@ export default function Home() {
                   <span className="ml-1">Available</span>
                 </div>
               </div>
-
-              <p className="text-gray-700 font-light">
-                Officiis eligendi itaque labore et dolorum mollitia officiis
-                optio vero. Quisquam sunt adipisci omnis et ut. Nulla
-                accusantium dolor incidunt officia tempore. Et eius omnis.
-                Cupiditate ut dicta maxime officiis quidem quia. Sed et
-                consectetur qui quia repellendus itaque neque.
-              </p>
             </div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 mt-6">
@@ -313,7 +299,7 @@ export default function Home() {
                 <BsEmojiSmile />
               </span>
               <div className="flex flex-col pl-4 space-y-1">
-                <span className="text-4xl font-semibold">{count}</span>
+                <span className="text-4xl font-semibold">4</span>
                 <span className="text-xs font-semibold text-emerald-700 items-start">
                   Happy Clients
                 </span>
@@ -326,7 +312,7 @@ export default function Home() {
                   <FaRegFileImage />
                 </span>
                 <div className="flex flex-col pl-4 space-y-1">
-                  <span className="text-4xl font-semibold">521</span>
+                  <span className="text-4xl font-semibold">7</span>
                   <span className="text-xs font-semibold text-emerald-700 items-start">
                     Projects Completed
                   </span>
@@ -341,7 +327,7 @@ export default function Home() {
                     <TfiHeadphoneAlt />
                   </span>
                   <div className="flex flex-col pl-4 space-y-1">
-                    <span className="text-4xl font-semibold">1453</span>
+                    <span className="text-4xl font-semibold">980</span>
                     <span className="text-xs font-semibold text-emerald-700 items-start">
                       Hours Of Support
                     </span>
@@ -357,7 +343,7 @@ export default function Home() {
                     <HiOutlineUsers />
                   </span>
                   <div className="flex flex-col pl-4 space-y-1">
-                    <span className="text-4xl font-semibold">32</span>
+                    <span className="text-4xl font-semibold">3</span>
                     <span className="text-xs font-semibold text-emerald-700 items-start">
                       Hard Workers
                     </span>
@@ -369,12 +355,11 @@ export default function Home() {
           </div>
           <div className="w-full bg-[#f4fafd] my-10">
             <h2 className="text-3xl font-bold text-black underline mb-6">
-              Skills
+              Technical Skills
             </h2>
-            <p className="text-black mb-8 w-full">
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem.
-            </p>
+           <p className="text-black mb-8 w-full">
+            I have hands-on experience in multiple frontend technologies, including React, Angular, and React Native. My focus is on writing clean code, building reusable components, and delivering visually appealing and functional interfaces.
+           </p>
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
               <div>
                 <div className="flex justify-between items-center px-1">
@@ -434,7 +419,7 @@ export default function Home() {
               </div>
               <div>
                 <div className="flex justify-between items-center px-1">
-                  <p>JavaScript</p>
+                  <p>JavaScript (ES6+)</p>
                   <p>80%</p>
                 </div>
                 <div>
@@ -448,7 +433,7 @@ export default function Home() {
               </div>
               <div>
                 <div className="flex justify-between items-center px-1">
-                  <p>React Native</p>
+                  <p>React Native (Mobile)</p>
                   <p>78%</p>
                 </div>
                 <div>
@@ -473,11 +458,9 @@ export default function Home() {
             Resume
           </h2>
           <p className="text-black mb-8">
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
+            Here is a quick overview of my academic background and professional journey so far. I’m committed to continuous learning and growth, always aiming to contribute effectively to every project I’m part of.
           </p>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 sm:gap-8 justify-between">
             {/* EDUCATION */}
             <div className="border-dotted border-2 border-gray-300 rounded-lg p-4 shadow-md">
@@ -530,7 +513,7 @@ export default function Home() {
                     Frontend Developer (Full-Time)
                   </h2>
                   <p className="text-gray-600">SHWET KAPILA PRIVATE LIMITED</p>
-                  <p>Jan 2024 - Jun 2025</p>
+                  <p>Jan 2024 - Present</p>
                 </div>
 
                 {/* second job */}
@@ -544,6 +527,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <div className="border-dotted border-2 border-gray-300 rounded-lg p-4 shadow-md">
+              Download Resume : 
+              <a href="/ravendra_kumar_resume.pdf" download className="text-blue-600 hover:underline"> {' '}Ravendra Kumar Resume</a>
+            </div>
           </div>
         </section>
 
@@ -555,12 +542,10 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-black underline mb-6">
             Portfolio
           </h2>
-          <p className="text-black mb-8">
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
-          </p>
+         <p className="text-black mb-8">
+          A showcase of some of the projects I’ve built using React, Angular, and Next.js. Each project demonstrates my attention to detail, design sense, and ability to deliver responsive and interactive applications.
+        </p>
+
           <div>
             <div>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6">
@@ -573,7 +558,7 @@ export default function Home() {
                   />
                   <h3 className="text-lg font-semibold mb-2">Todo Application</h3>
                   <p className="text-gray-600 mb-4">
-                    Brief description of the project.
+                    A simple yet functional Todo app built with React. Add, remove, and mark tasks as completed, showcasing component structure and state management.
                   </p>
                   <a
                     href="#"
@@ -591,7 +576,7 @@ export default function Home() {
                   />
                   <h3 className="text-lg font-semibold mb-2">Weather Website</h3>
                   <p className="text-gray-600 mb-4">
-                    Brief description of the project.
+                    A responsive weather application using Angular and OpenWeather API. Displays current weather, forecast, and dynamic background changes.
                   </p>
                   <a
                     href="#"
@@ -609,7 +594,7 @@ export default function Home() {
                   />
                   <h3 className="text-lg font-semibold mb-2">Movie Website</h3>
                   <p className="text-gray-600 mb-4">
-                    Brief description of the project.
+                    Movie database website built with React and external APIs. Search movies, view details, and explore trending collections.
                   </p>
                   <a
                     href="#"
@@ -627,7 +612,7 @@ export default function Home() {
                   />
                   <h3 className="text-lg font-semibold mb-2">Chat App</h3>
                   <p className="text-gray-600 mb-4">
-                    Brief description of the project.
+                    A real-time chat application designed with React and Socket.io. Clean UI, responsive design, and instant message updates.
                   </p>
                   <a
                     href="#"
@@ -663,7 +648,7 @@ export default function Home() {
                         Address
                       </span>
                       <p className="text-gray-600 text-sm">
-                        239 North Clark Street, Chicago, IL 60610
+                        296 Near Old Fort Street, Dharmpur,202393
                       </p>
                     </div>
                   </div>
