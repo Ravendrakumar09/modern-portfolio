@@ -14,7 +14,7 @@ import { TfiEmail } from "react-icons/tfi";
 import { AiOutlineCustomerService } from "react-icons/ai";
 import Image from "next/image";
 import profile from "../assets/ravi-image.jpeg";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { BsEmojiSmile } from "react-icons/bs";
 import { FaRegFileImage } from "react-icons/fa";
@@ -36,7 +36,7 @@ import {
 } from "react-icons/fa";
 
 export default function Home() {
-  const words = ["Frontend Developer"];
+  const words = useMemo(() => ["Frontend Developer"], []);
   const [text, setText] = useState("");
   const [wordIndex, setWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -1162,7 +1162,7 @@ export default function Home() {
 
             <div className="mt-10 text-center">
               <p className="text-gray-700 mb-4">
-                Interested in working together? Let's discuss your project!
+                Interested in working together? Let&apos;s discuss your project!
               </p>
               <a
                 href="#contact"
