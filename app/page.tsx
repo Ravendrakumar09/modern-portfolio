@@ -19,7 +19,6 @@ import { MdOutlineArrowRight } from "react-icons/md";
 import { BsEmojiSmile } from "react-icons/bs";
 import { FaRegFileImage } from "react-icons/fa";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
-import { HiOutlineUsers } from "react-icons/hi2";
 import { CiLocationOn } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
 import {
@@ -42,7 +41,6 @@ export default function Home() {
   const [wordIndex, setWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [deleting, setDeleting] = useState(false);
-  const [count, setCount] = useState(0);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -53,9 +51,6 @@ export default function Home() {
     type: "success" | "error" | null;
     message: string;
   }>({ type: null, message: "" });
-
-  let target = 252; // Target number for the counter
-  let duration = 2000; // Duration in milliseconds for the counter to reach the target
 
   useEffect(() => {
     const currentWord = words[wordIndex];
@@ -82,23 +77,7 @@ export default function Home() {
     ); // typing speed
 
     return () => clearTimeout(timeout);
-  }, [charIndex, deleting, wordIndex]);
-
-  useEffect(() => {
-    let start = 0;
-    const increment = target / (duration / 16);
-
-    const counter = setInterval(() => {
-      start += increment;
-      if (start >= target) {
-        start = target;
-        clearInterval(counter);
-      }
-      setCount(Math.ceil(start));
-    }, 16);
-
-    return () => clearInterval(counter);
-  }, [target, duration]);
+  }, [charIndex, deleting, wordIndex, words]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -125,7 +104,7 @@ export default function Home() {
       if (response.ok) {
         setSubmitStatus({
           type: "success",
-          message: "Message sent successfully! I'll get back to you soon.",
+          message: "Message sent successfully! I&apos;ll get back to you soon.",
         });
     // Reset form fields
     setName("");
@@ -414,7 +393,7 @@ export default function Home() {
               </span>
           </h1>
             <p className="text-white text-2xl md:text-3xl lg:text-4xl flex items-center justify-center gap-2">
-              <span className="text-gray-300">I'm</span>
+              <span className="text-gray-300">I&apos;m</span>
               <span className="text-blue-400 ml-2 border-r-2 border-blue-400 pr-2 animate-pulse font-semibold">
               {text}
             </span>
