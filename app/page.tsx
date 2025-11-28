@@ -14,6 +14,10 @@ import { TfiEmail } from "react-icons/tfi";
 import { AiOutlineCustomerService } from "react-icons/ai";
 import Image from "next/image";
 import profile from "../assets/ravi-image.jpeg";
+import ecommerceImage from "../assets/ecommerce_dashboard.png";
+import portfolioImage from "../assets/portfolio_dashboard.jpeg";
+import weatherImage from "../assets/weather_dashboard.png";
+import chatAppImage from "../assets/chatapp_image.jpeg";
 import { useEffect, useState, useMemo } from "react";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { BsEmojiSmile } from "react-icons/bs";
@@ -861,8 +865,14 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Project 1 - Real-Time Chat Application */}
               <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden border border-gray-200">
-                <div className="h-48 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
-                  <FaRegFileImage className="text-white text-6xl" />
+              <div className="h-48 relative overflow-hidden">
+                  <Image
+                    src={chatAppImage}
+                    alt="E-Commerce Platform"
+                    className="w-full h-full object-cover"
+                    fill
+                  />
+                  <div className="absolute inset-0 bg-black/20 hover:bg-black/10 transition-colors"></div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-black mb-2">
@@ -914,8 +924,14 @@ export default function Home() {
 
               {/* Project 2 - E-Commerce Platform */}
               <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden border border-gray-200">
-                <div className="h-48 bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
-                  <FaRegFileImage className="text-white text-6xl" />
+                <div className="h-48 relative overflow-hidden">
+                  <Image
+                    src={ecommerceImage}
+                    alt="E-Commerce Platform"
+                    className="w-full h-full object-cover"
+                    fill
+                  />
+                  <div className="absolute inset-0 bg-black/20 hover:bg-black/10 transition-colors"></div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-black mb-2">
@@ -964,8 +980,14 @@ export default function Home() {
 
               {/* Project 3 - Portfolio Website */}
               <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden border border-gray-200">
-                <div className="h-48 bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center">
-                  <FaRegFileImage className="text-white text-6xl" />
+                <div className="h-48 relative overflow-hidden">
+                  <Image
+                    src={portfolioImage}
+                    alt="Portfolio Website"
+                    className="w-full h-full object-cover"
+                    fill
+                  />
+                  <div className="absolute inset-0 bg-black/20 hover:bg-black/10 transition-colors"></div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-black mb-2">
@@ -1006,8 +1028,14 @@ export default function Home() {
 
               {/* Project 4 - Weather Dashboard */}
               <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden border border-gray-200">
-                <div className="h-48 bg-gradient-to-br from-orange-500 to-orange-700 flex items-center justify-center">
-                  <FaRegFileImage className="text-white text-6xl" />
+              <div className="h-48 relative overflow-hidden">
+                  <Image
+                    src={weatherImage}
+                    alt="E-Commerce Platform"
+                    className="w-full h-full object-cover"
+                    fill
+                  />
+                  <div className="absolute inset-0 bg-black/20 hover:bg-black/10 transition-colors"></div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-black mb-2">
