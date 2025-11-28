@@ -302,7 +302,7 @@ export default function Home() {
         <div className="flex justify-center space-x-3 mt-4 text-xl">
           <a
             className="bg-gray-400 hover:bg-gray-200 p-2 rounded-full text-black"
-            href="https://github.com"
+            href="https://github.com/Ravendrakumar09"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -310,7 +310,7 @@ export default function Home() {
           </a>
           <a
             className="bg-gray-400 hover:bg-gray-200 p-2 rounded-full text-black"
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/ravendra-kumar09/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -326,7 +326,7 @@ export default function Home() {
           </a>
           <a
             className="bg-gray-400 hover:bg-gray-200 p-2 rounded-full text-black"
-            href="https://facebook.com"
+            href="https://facebook.com/itsravibaghel09"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -334,7 +334,7 @@ export default function Home() {
           </a>
           <a
             className="bg-gray-400 hover:bg-gray-200 p-2 rounded-full text-black"
-            href="https://instagram.com"
+            href="https://instagram.com/itsravibaghel09/"
             target="_blank"
             rel="noopener noreferrer"
           >
